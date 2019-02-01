@@ -90,3 +90,15 @@ window.onload = function(){
         }
 
 ```
+---
+## addEventListener()方法
+#### 语法
+`element.addEventListener(event, function, useCapture)`
+
+| 参数       | 描述                                                         |
+| ---------- | ------------------------------------------------------------ |
+| event      | 必须。字符串，制定事件名。注意不要使用"on"前缀。             |
+| function   | 必须。指定要事件触发时执行的函数。注意只需函数名不需要()。   |
+| useCapture | 可选。布尔值，指定事件是否在捕获或冒泡阶段执行。(true/false) |
+
+**提示:**使用`removeEventListener()`来移除`addEventListener()`
