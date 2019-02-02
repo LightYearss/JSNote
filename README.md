@@ -92,6 +92,8 @@ window.onload = function(){
 ```
 ---
 ## addEventListener()方法
+#### 用法
+addEventListener() 方法用于向指定元素添加事件句柄。
 #### 语法
 `element.addEventListener(event, function, useCapture)`
 
@@ -101,4 +103,24 @@ window.onload = function(){
 | function   | 必须。指定要事件触发时执行的函数。注意只需函数名不需要()。   |
 | useCapture | 可选。布尔值，指定事件是否在捕获或冒泡阶段执行。(true/false) |
 
-**提示:**使用`removeEventListener()`来移除`addEventListener()`
+**提示:** 使用`removeEventListener()`来移除`addEventListener()`
+
+---
+## toFixed()方法
+#### 用法
+toFixed() 方法可把 Number 四舍五入为指定小数位数的数字。
+#### 语法
+`NumberObject.toFixed(num)`
+#### 例子
+```
+Show the number 13.37 with one decimal:
+<script type="text/javascript">
+var num = new Number(13.37);
+document.write (num.toFixed(1))
+</script>
+```
+输出：
+```
+Show the number 13.37 with one decimal:
+13.4
+```
